@@ -1,5 +1,6 @@
 import Button from './components/button';
 import Card from './components/card';
+import Input from './components/input';
 
 function App(){
 
@@ -31,6 +32,11 @@ function App(){
           description="Blue color"
           footer="Rs. 190.00"
         />
+
+
+        <Input lable="Enter your Nname" placeholder="Type here ..."></Input>
+        <Input lable="Enter your email" placeholder="example@gmail.com"></Input>
+
     </div>  
   );
 }
