@@ -1,6 +1,7 @@
 import Button from './components/button';
 import Card from './components/card';
 import Input from './components/input';
+import Counter from'./components/counter';
 
 function App(){
 
@@ -36,6 +37,9 @@ function App(){
 
         <Input lable="Enter your name" placeholder="Type here ..."></Input>
         <Input lable="Enter your email" placeholder="example@gmail.com"></Input>
+
+
+        <Counter></Counter>
 
     </div>  
   );
