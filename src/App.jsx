@@ -34,7 +34,7 @@ function App(){
         />
 
 
-        <Input lable="Enter your Nname" placeholder="Type here ..."></Input>
+        <Input lable="Enter your name" placeholder="Type here ..."></Input>
         <Input lable="Enter your email" placeholder="example@gmail.com"></Input>
 
     </div>  
