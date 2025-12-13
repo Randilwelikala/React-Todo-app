@@ -4,6 +4,7 @@ import Input from './components/input';
 import Counter from'./components/counter';
 import Modal from './components/modal';
 import Tabs from './components/tabs';
+import Navbar from './components/navbar';
 
 function App(){
 
@@ -49,6 +50,9 @@ function App(){
         <br></br>
 
         <Tabs></Tabs>
+
+        <Navbar items={["Home", "About", "Contact"]} />
+
 
     </div>  
   );
