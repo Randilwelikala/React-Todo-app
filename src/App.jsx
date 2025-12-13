@@ -3,6 +3,7 @@ import Card from './components/card';
 import Input from './components/input';
 import Counter from'./components/counter';
 import Modal from './components/modal';
+import Tabs from './components/tabs';
 
 function App(){
 
@@ -42,9 +43,12 @@ function App(){
 
         <Counter></Counter>
 
-        <Modal>
-          
-        </Modal>
+        
+
+        <Modal></Modal>
+        <br></br>
+
+        <Tabs></Tabs>
 
     </div>  
   );
