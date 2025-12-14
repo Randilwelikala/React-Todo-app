@@ -53,6 +53,21 @@ function App(){
 
         <Navbar items={["Home", "About", "Contact"]} />
 
+        <nav>
+          <link to="/">Home</link>
+          <link to="/profile">Profile</link>
+          <link to="/settings">Settings</link>
+        </nav>
+
+        <Routes>
+          <Rout path="/" element={<Home/>}/>
+          <Rout path="/profile" element={<Profile/>}/>
+          <Rout path="/settings" element={<Settings/>}/>
+        </Routes>
+
+
+
+
 
     </div>  
   );
