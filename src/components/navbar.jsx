@@ -1,7 +1,7 @@
 import {useState} from 'react';
 
 function Navbar ({items}){
-    const [active,setActive] = useState(items[0]);
+    const [setActive] = useState(items[0]);
 
     return(
         <nav>
