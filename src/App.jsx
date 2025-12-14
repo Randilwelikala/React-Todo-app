@@ -5,6 +5,11 @@ import Counter from'./components/counter';
 import Modal from './components/modal';
 import Tabs from './components/tabs';
 import Navbar from './components/navbar';
+import { Routes, Route, Link } from "react-router-dom";
+import Home from'./pages/home';
+import Profile from'./pages/profile';
+import Settings from'./pages/settings';
+
 
 function App(){
 
@@ -54,15 +59,15 @@ function App(){
         <Navbar items={["Home", "About", "Contact"]} />
 
         <nav>
-          <link to="/">Home</link>
-          <link to="/profile">Profile</link>
-          <link to="/settings">Settings</link>
+          <Link to="/">Home</Link>
+          <Link to="/profile">Profile</Link>
+          <Link to="/settings">Settings</Link>
         </nav>
 
         <Routes>
-          <Rout path="/" element={<Home/>}/>
-          <Rout path="/profile" element={<Profile/>}/>
-          <Rout path="/settings" element={<Settings/>}/>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/profile" element={<Profile/>}/>
+          <Route path="/settings" element={<Settings/>}/>
         </Routes>
 
 
