@@ -9,6 +9,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import Home from'./pages/home';
 import Profile from'./pages/profile';
 import Settings from'./pages/settings';
+import User from './pages/user';
 
 
 function App(){
@@ -62,12 +63,16 @@ function App(){
           <Link to="/">Home</Link>
           <Link to="/profile">Profile</Link>
           <Link to="/settings">Settings</Link>
+
+          <Link to="/user">User</Link>
         </nav>
 
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/profile" element={<Profile/>}/>
-          <Route path="/settings" element={<Settings/>}/>
+          <Route path="/settings" element={<Settings/>}/>     
+
+          <Route path="/user" element={<User />} />
         </Routes>
 
 
