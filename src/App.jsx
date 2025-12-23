@@ -10,18 +10,19 @@ import Home from'./pages/home';
 import Profile from'./pages/profile';
 import Settings from'./pages/settings';
 import User from './pages/user';
+import Sidebar from './components/sidebar'
 
 
 
 function App(){
 
-  const handleClick = () => {
-    alert('Button Clicked!');
-  }
+  // const handleClick = () => {
+  //   alert('Button Clicked!');
+  // }
   
   return (
     <div>
-      <div>
+      {/* <div>
         <h1>Todo App</h1>
       </div>   
         <Button text="Click Me" onClicked={handleClick}></Button> 
@@ -56,8 +57,8 @@ function App(){
         <Modal></Modal>
         <br></br>
 
-        <Tabs></Tabs>
-
+        <Tabs></Tabs> */}
+        <Sidebar></Sidebar>
         <Navbar items={["Home", "About", "Contact"]} />
 
         <nav>
