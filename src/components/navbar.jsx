@@ -1,15 +1,26 @@
 import {useState} from 'react';
+import {Link,useLocation} from "react-router-dom";
 
-function Navbar ({items}){
-    const [setActive] = useState(items[0]);
+function Navbar (){
+    const location = useState();
+    const navItems = [
+        {name:"Dashboard", path:"/"},
+        {name: "Users", path:"/users"},
+        {name:"Settings", path:"/settings"},
+    ];
 
     return(
         <nav>
-            {items.map((item)=>(
-                <p key={item} onClick={()=>setActive(item)}>{item}</p>
+            {navItems.map((item) =>(
+                <Link
+                    key={item.pathy}
+                    to={item.path}
+                    >
+                        {item.name}
+                    </Link>
             ))}
         </nav>
-    )
+    );
 
 
 }
