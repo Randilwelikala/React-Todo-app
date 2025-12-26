@@ -40,6 +40,7 @@ function App(){
           <Route path="/settings" element={<Settings/>}/>     
 
           <Route path="/user" element={<User />} />
+          <Route/>
         </Routes>
 
 
